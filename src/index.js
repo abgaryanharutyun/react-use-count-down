@@ -1,7 +1,7 @@
 import React from 'react';
 
 const useCountDown = (timeToCount = 60 * 1000, interval = 1000) => {
-  const [timeLeft, setTimeLeft] = React.useState(0);
+  const [timeLeft, setTimeLeft] = React.useState(timeToCount);
   const timer = React.useRef({});
 
   const run = (ts) => {
