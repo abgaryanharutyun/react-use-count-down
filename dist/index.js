@@ -25,7 +25,7 @@ var useCountDown = function useCountDown() {
   var timeToCount = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 60 * 1000;
   var interval = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
 
-  var _React$useState = _react["default"].useState(0),
+  var _React$useState = _react["default"].useState(timeToCount),
       _React$useState2 = _slicedToArray(_React$useState, 2),
       timeLeft = _React$useState2[0],
       setTimeLeft = _React$useState2[1];
